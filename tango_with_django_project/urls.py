@@ -7,8 +7,7 @@ admin.autodiscover() # UNCOMMENT THIS LINE, TOO!
 
 urlpatterns = patterns('',
         url(r'^rango/', include('rango.urls')),
-        url(r'^admin/', include(admin.site.urls)), # ADD THIS LINE
-          url(r'^rango/', include('rango.urls')), # ADD THIS NEW TUPLE!
+        url(r'^admin/', include(admin.site.urls)), # ADD THIS LINE 
         )
 
 if settings.DEBUG:
